@@ -1,2 +1,3 @@
 //b.cpp
-#include<iostream>
+#include <iostream>
+
