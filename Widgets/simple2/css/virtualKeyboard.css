@@ -1,0 +1,62 @@
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2016-02-03
+*Description:virtual keyboard css  style
+******************/
+body{
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+}
+.keyboard{
+	width: 1020px;
+	height: 375px;
+	position: absolute;
+	bottom: 10px;
+	left: 5px;
+	border: 1px solid black;
+}
+.input-box{
+	width: 1010px;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 400px;
+	left: 5px;
+	height: 100px;
+	font-size: 25px;
+	padding: 5px;
+	line-height: 30px;
+}
+ul{
+	float: left;
+}
+ul>li{
+	width: 85px;
+	height: 85px;
+	background-color: #999;
+	border:1px solid black;
+	color:white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.enter{
+	width: 177px;
+	height: 85px;
+}
+.symbol{
+	width: 172px;
+}
+.blank-space{
+	width: 269px;
+}
+.is-selected{
+	background-color: #0099FF !important;
+}
+.is-upper{
+	background-color: #89B1CB;
+}

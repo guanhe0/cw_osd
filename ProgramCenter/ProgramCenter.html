@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ProgramCenter</title>
+    <link href="../common/css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/ProgramCenter.css" rel="stylesheet" type="text/css">
+    <link href="../common/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- <script id="js_programData" src="../../data/channel/tvprograminfo_1.js"></script> -->
+    <script id="js_programData" src=""></script>
+    <!-- <script id="js_programData" src="../../data/channel/favoriteList.js"></script> -->
+    <script id="js_favoriteData" src=""></script>
+    <script id="js_mediaData" src=""></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul id="js_menu" class="menu-ul">
+            <li data-url="pictureMode.html">
+                <div class="img"></div>
+                <span>111</span>
+            </li>
+            <li>
+                <div class="img"></div>
+                <span></span></li>
+            <li>
+                <div class="img"></div>
+                <span></span></li>
+            <li>
+                <div class="img"></div>
+                <span></span></li>
+        </ul>
+    </div>
+    <div class="content" id="#js_content">
+        <div class="channelList">
+                <div class="channel-search-little">
+                    <div class="search">
+                        <img height="30" src="images/search.png" align="center" />
+                        <input type="text" />
+                    </div>
+                </div>
+            <ul id="js_channelList">
+            </ul>
+        </div>
+        <div class="my-channel">
+            <ul id="js_mychannel">
+            </ul>
+        </div>
+        <div class="medias" id="js_media">
+            <div class="media-set">路径设置</div>
+            <div class="media-panfu">
+                <div class="media-title">外接盘符</div>
+                <br>
+                <ul id="js_mediaExter">
+                    
+                </ul>
+            </div>
+        </div>
+      <!--   <div class="sort">
+            <div class="sort-switch">
+                <table width="300" border="0" id="js_sort">
+                    <tr height="80">
+                        <td>&nbsp;By Name </td>
+                        <td>
+                            <div class="switch">
+                                <div></div><span>Close</span></div>
+                        </td>
+                    </tr>
+                    <tr height="80">
+                        <td>&nbsp;By Number </td>
+                        <td>
+                            <div class="switch">
+                                <div></div><span>Close</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> -->
+    </div>
+    <div class="detail" id="js_detail">
+        <div class="channel-detail">
+            <div class="channel-search">
+                <div class="channel-search-bigger">
+                    <div class="search-chooise">
+                        <table width="400" border="0" id="js_searchChooise">
+                            <tr>
+                                <td rowspan="2">
+                                    <div class="search-moren">默认</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <input type="checkbox">DTV</div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <input type="checkbox">ATV
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="search-up">
+                        <span>^</span>
+                    </div>
+                    <div class="search"><img height="30" src="images/search.png" align="center" />
+                        <input type="text" id="js_searchText" />
+                    </div>
+                    <div class="search-content">
+                        <ul id="js_searchContent">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="channel-info">
+                <div class="loadPage" id="js_loadData">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <div class="channel-info-text" id="js_channelText">
+                    <div class="program-name">prgram name</div>
+                    <div class="program-name">prgram name</div>
+                    <div class="program-operate">OK：播放
+                        <span class="glyphicon glyphicon-arrow-right"></span>EPG
+                        <span class="glyphicon glyphicon-arrow-up"></span>PVR
+                    </div>
+                </div>
+                <ul id="js_channelInfo">
+                </ul>
+            </div>
+            <div class="sort-detail">
+                <ul id="js_sortDetail">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <div class="route" id="js_route">路径设置</div>
+    </div>
+    <div class="channelColor" id="js_channelColor">
+        <ul>
+            <li class='Favorite'></li>
+            <li class='Delete'></li>
+            <li class='Lock'></li>
+            <li class='Skip'></li>
+        </ul>
+    </div>
+    <script src="../common/js/jquery.min.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="js/ProgramCenter.js"></script>
+</body>
+
+</html>

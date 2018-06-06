@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setting</title>
+	<link rel="stylesheet" type="text/css" href="../common/css/base.css">
+	<link href="css/Setting.css" rel="stylesheet" type="text/css">
+	<link href="Time/css/Time.css" rel="stylesheet" type="text/css">
+	<link href="Advanced/css/Advanced.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../common/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../common/js/common.js" id="js_common"></script>
+	<script type="text/javascript" src="js/Setting.js"></script>
+
+
+
+
+</head>
+<body>
+	<div class="menuBar" id="js_menu">
+		<ul id="js_menuBar">
+			<li><img src="img/network.png"><span></span></li>
+			<li><img src="img/time.png"><span></span></li>
+			<li><img src="img/pvr.png"><span></span></li>
+			<li><img src="img/sence.png"><span></span></li>
+			<li><img src="img/advanced.png"><span></span></li>
+		</ul>
+	</div>
+
+
+	<div class="showBox">
+		<!-- <div class="netType">
+			<ul id="js_netType"><li id="js_netType0"></li><li id="js_netType1"></li></ul>
+		</div>
+		<div class="wiredShow">
+			<ul class="wiredTitle"><li id="js_wiredState0"></li><li id="js_wiredState1"></li></ul>
+			<div class="info-DHCP">
+				<div><div id="js_infoDHCP0"></div><span> 172.16.67.130 </span></div>
+				<div><div id="js_infoDHCP1"></div><span> 255.255.254.0 </span></div>
+				<div><div id="js_infoDHCP2"></div><span>172.16.66.254 </span></div>
+				<div><div id="js_infoDHCP3"></div><span>172.16.64.81</span></div>
+			</div>
+		</div> -->
+	</div>
+
+
+	<div class="showBox">
+		<div class="timeInfo" id="js_timeInfo">
+			<div class="title"></div>
+			<li class="liTitle">
+				<div></div>
+				<div id="js_timeShow"></div>
+			</li>
+			<div class="timeEdit" id="js_timeEdit">
+					<div class="autoBox" id="js_auto">
+						<ul class="autoEdit" id="js_autoEdit">
+							<li></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div>
+					<!-- <div class="autoBox" id="js_type">
+						<ul class="autoEdit" id="js_typeEdit">
+							<li></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div> -->
+					<div class="clock" id="js_hourEdit">
+						<div></div>
+						<div>
+							<ul class="tab-ul" id="js_hour">
+								<li></li><li></li><li></li><li></li><li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clock symbol">
+						<div></div>
+						<div>
+							<ul class="tab-ul">
+								<li>:</li><li>:</li><li>:</li><li>:</li><li>:</li>
+							</ul>
+						</div>
+					</div>
+					<div  style="margin-left: 0px!important" class="clock" id="js_minuteEdit">
+						<div></div>
+						<div>
+							<ul class="tab-ul" id="js_minute">
+								<li></li><li></li><li></li><li></li><li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clock" id="js_dateEdit">
+						<div></div>
+						<div>
+							<ul class="tab-ul" id="js_date">
+								<li></li><li></li><li></li><li></li><li></li>
+							</ul>
+						</div>
+					</div>
+					<div style="margin-left: 0px!important" class="clock symbol">
+						<div></div>
+						<div>
+							<ul class="tab-ul">
+								<li>-</li><li>-</li><li>-</li><li>-</li><li>-</li>
+							</ul>
+						</div>
+					</div>
+					<div style="margin-left: 0px!important" class="clock" id="js_monthEdit">
+						<div></div>
+						<div>
+							<ul class="tab-ul" id="js_month">
+								<li></li><li></li><li></li><li></li><li></li>
+							</ul>
+						</div>
+					</div>
+					<div style="margin-left: 0px!important" class="clock symbol">
+						<div></div>
+						<div>
+							<ul class="tab-ul">
+								<li>-</li><li>-</li><li>-</li><li>-</li><li>-</li>
+							</ul>
+						</div>
+					</div>
+					<div style="margin-left: 0px!important" class="clock" id="js_yearEdit">
+						<div></div>
+						<div>
+							<ul class="tab-ul" id="js_year">
+								<li></li><li></li><li></li><li></li><li></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="tab-show" id="js_timeBox"></div>
+				</div>
+			
+			<li class="liTitle">
+				<div></div>
+				<div id="js_zoneShow">IDLE</div>
+			</li>
+			<div class="timeEdit" >
+					<div class="autoBox  zoneEdit">
+						<ul class="autoEdit" style="margin-top: -80px!important" id="js_country">
+							<li></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div>
+					<div id="js_cityTabs">
+						<ul class="autoEdit city" id="js_zone">
+							<li></li><li></li><li></li><li></li><li></li>
+						</ul>
+					</div>
+					<div style="top:80px!important" class="tab-show" id="js_zoneBox"></div>
+				</div>
+
+
+			<li class="liTitle">
+				<div></div>
+				<div id="js_sleepTimeShow"></div>
+				
+			</li>
+			<div class="timeEdit">
+					<ul class="sleep-time" id="js_sleepTime">
+						<li><img src="img/select.png"></li>
+						<li><img src="img/select.png"></li>
+						<li><img src="img/select.png"></li>
+						<li><img src="img/select.png"></li>
+						<li><img src="img/select.png"></li>
+						<li><img src="img/select.png"></li>
+					</ul>
+				</div>
+
+			<li class="liTitle">
+				<div></div>
+				<div id="js_daylight">OFF</div>
+			</li>
+			<li class="liTitle">
+				<div></div>
+				<div>OFF</div>
+			</li>
+			<li class="liTitle">
+				<div></div>
+				<div id="js_energy">OFF</div>
+			</li>
+		</div>
+	</div>
+
+	<div class="showBox"></div>
+	<div class="showBox"></div>
+	<div class="showBox">
+		<ul class="menu" id="js_advancedMenu"><div class="advanced-title">Advanced</div></ul>
+		<ul class="menu menu-hide picture-menu" id="js_pictureMenu">
+			<li><span></span></li>
+			<ul class="menu picture-setting height-none" id="js_pictureSetting">
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+			</ul>
+			<li><span></span></li>
+			<ul class="color-temperature height-none" id="js_colorTemperature">
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+			</ul>
+			<li><span></span></li>
+			<ul class="menu picture-setting height-none backlight" id="js_backlight">
+				<li>
+					<table>
+						<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+					</table>
+				</li>
+			</ul>
+			<li><span></span></li>
+			<ul class="aspect-ratio height-none" id="js_aspectRatio">
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+			</ul>	
+			<li><span></span></li>
+		</ul>
+		<ul class="sky-mode menu-hide" id="js_skyMode">
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<div class="sky-mode-state" id="js_memcEdit">
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+			</div>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<div class="sky-mode-state" id="js_dnrEdit">
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+				<li><img src="img/select.png"><span></span></li>
+			</div>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>	
+		</ul>
+		<ul class="menu menu-hide picture-setting sound" id="js_soundMenu">
+			<li>
+				<table>
+					<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td class="num"></td><td><div class="progress-bar"><div></div><div class="dot"></div></div></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<div class="output-edit" id="js_formatEdit">
+				<ul class="output" id="js_format">
+					<li><img src="img/select.png"><span>Auto</span></li>
+					<li><img src="img/select.png"><span>PCM</span></li>
+				</ul>
+			</div>
+			<li>
+				<table>
+					<tr><td></td><td></td></tr>
+				</table>
+			</li>
+			<div class="output-edit" id="js_outputEdit">
+				<ul class="output" id="js_output">
+					<li><img src="img/select.png"><span></span></li>
+					<li><img src="img/select.png"><span></span></li>
+				</ul>
+			</div>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript" src="js/Setting-network.js"></script>
+	<script type="text/javascript" src="Time/js/Time.js"></script>
+	<script type="text/javascript" src="Advanced/js/Advanced.js"></script>
+</body>
+</html>

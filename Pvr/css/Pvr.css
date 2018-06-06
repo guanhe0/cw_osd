@@ -1,0 +1,130 @@
+/*
+li{
+	float:left;list-style:none;
+}
+ul{
+	align:center;
+}
+*/
+
+.items{
+	width:440px;
+	height:100%;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+.recTime{
+	width:100px;
+	height:200px;
+	#background-color:blue;
+	float:right;
+}
+#rec_status_img{
+	width:100px;
+	height:100px;
+	display:block;
+	#float:left;
+}
+#rec_stauts_time{
+	width:100px;
+	height:100px;
+}
+.pvr_home_highlight{
+	background:rgb(58,121,161);
+}
+.pvr_record_txt{
+	background:transparent;
+	width:100px;
+	height:40px;
+	float:left;
+	color:red;
+}
+.ml60{
+	margin-left:140px;
+}
+.invisible{
+	visibility:hidden;
+	width:0px;
+	height:0px;
+}
+.playInfo{
+	width:750px;
+	height:100%;
+	float:right;
+	
+}
+.InfoLeft{
+	width:80%;
+	height:100%;
+	#background-color:blue;
+	float:left;
+	
+}
+.PlayProgress{
+	width:60%;
+	height:50%;
+	float:right;
+}
+.CurChannelText,.PlayProgressText{
+	height:48px;
+	display:block;
+	text-align:center;
+	line-height:68px;
+}
+.CurChannel{
+	width:60%;
+	height:50%;
+	float:right;
+	#background-color:green;
+}
+.InfoRight{
+	width:20%;
+	height:100%;
+	#background-color:red;
+	float:left;
+	padding-top:30px;
+}
+.diskImg{
+	float:right;
+	width:100%;
+	height:70%;
+	display:block;
+}
+.diskMem{
+	float:right;
+	width:100%;
+	height:30%;
+	#background-color:green;
+}
+.items_left{
+	width:500px;
+	height:100%;
+	position:relative;
+	margin-left:20px;
+	float:left;
+}
+.pvr_progress{
+	width:1280px;
+	height:2%;
+#	background:rgba(100,100,100,0.1);
+	#position:absolute;bottom:auto;
+	text-align:center;
+}
+.bottom_contain{
+	width:1280px;
+	height:20%;
+	#background:rgba(100,100,100,0.1);
+	position:absolute;bottom:0;
+	text-align:center;
+}
+.bottom_content{
+	width:1280px;
+	height:80%;
+	background:rgba(100,100,100,0.1);
+	position:absolute;bottom:0;
+	text-align:center;	
+}
+.progress_contain{
+	background:transparent;
+}

@@ -1,0 +1,128 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:chencong
+*Date:2016-02-15
+*Description:sound module css  style
+******************/
+body{
+	font-family: "Microsoft YaHei";
+	color: white;
+}
+.title{
+	font-weight: bold;
+	display: inline-block;
+	font-size: 25px;
+	width: 500px;
+	background-color: #919191;
+	text-align: center;
+	margin:0px;
+	line-height: 50px;
+}
+.content{
+	width: 500px;
+	background-color: #919191;
+}
+.content>li{
+	background-color: #999;
+	float: left;
+	width: 498px;
+	list-style: none;
+	border: 1px solid #919191;
+	font-size: 17px;
+	line-height: 40px;
+}
+.content>li>span{
+	width: 200px;
+	display: block;
+	float: left;
+}
+.content>li>ul{
+	padding:0px;
+	width: 298px;
+	height: 40px;
+	float: left;
+	margin:0px;
+	text-align: center;
+}
+.content>li>ul>li{
+	float: left;
+	display: inline-block;
+	margin:0px;
+	width: 99px;
+	height: 40px;
+	text-align: center;
+	color: #777;
+}
+.content>li>ul>li:nth-child(2){
+	color: white;
+}
+.content-bar{
+	height: 10px;
+	width: 200px;
+	background-color: #777;
+	float: left;
+	border-radius: 5px;
+	margin-top: 15px;
+	margin-left: 4px;
+}
+.content-bar>div{
+	margin-top: 0px;
+	width: 60px;
+	background-color: white;
+	margin-left: 0px;
+}
+.content-span{
+	float: right;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	margin: 0px;
+	margin-right: 40px;
+
+}
+.on-off{
+	width: 80px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid rgba(0,0,0,.4);
+	float: left;
+	margin-left: 110px;
+	margin-top: 4px;
+	background-color: #777;
+}
+.on-off div{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: white;
+	transition-property: all;
+	transition-duration: 0.5s;
+}
+.on-off span{
+	margin-top: -4px;
+	float: left;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	margin-left: 40px;
+}
+.is-selected{
+	background-color: #0099FF !important;
+}
+
+.on-off-text{
+	margin-left: 5px !important;
+}
+.on-off-btn{
+	margin-left: 50px;
+}
+.on-off-color{
+	background-color: #999 !important;
+}
+
+.isDisabled{
+	background-color:#B7B5B5 !important;
+}
+.isDisabled-text{
+	color: #777 !important;
+}

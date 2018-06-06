@@ -1,0 +1,234 @@
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2016-03-10
+*Description: setting css  style
+******************/
+.menu{
+	width: 500px;
+	float: left;
+	height: 1210px;
+	left: 0px;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	position: absolute;
+	-webkit-transition-property:left;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.menu>li{
+	width: auto;
+	height: 90px;
+}
+
+.menu>li:nth-child(1){
+	margin-top: 20px;
+}
+.menu>li>span{
+	font-size: 28px;
+	line-height: 90px;
+	width: auto;
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.menu-hide{
+	left: -1280px!important;
+	-webkit-transition-delay:0s;
+}
+.menu-show{
+	left:0px;
+	-webkit-transition-delay:.2s;
+}
+.picture-setting{
+	width: auto;
+	height: 500px;
+	position: static;
+	overflow: hidden;
+	-webkit-transition-property:height;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.picture-menu>li{
+	float: left;
+	width: 400px;
+}
+.backlight{
+	height: 180px;
+}
+/*.picture-setting>li>table{
+	display: inline-block;
+}*/
+.progress-bar{
+	width: 300px;
+	height: 90px;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: width .5s ease 0s;
+}
+/*.progress-bar-show{
+	width: 300px;
+}*/
+.progress-bar>div:nth-child(1){
+	width: 300px;
+	height: 10px;
+	background-color: white;
+	border-radius: 45px 45px;
+	position: absolute;
+	top: 40px;
+}
+.progress-bar>div:nth-child(2){
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 10px 10px;
+	top: 35px;
+	position: absolute;
+}
+table{
+	height: 90px;
+}
+td{
+	font-size: 28px;
+	padding-left: 50px;
+	padding-right: 20px;
+}
+table td:nth-child(1){
+	width: 200px;
+}
+.num{
+	width: 60px;
+}
+.advanced-title{
+	font-size: 32px;
+	line-height: 90px;
+	padding-left: 30px;
+	font-weight: 900;
+}
+.color-temperature{
+	width: 600px;
+	float: left;
+	height: 180px;
+	left: 0px;
+	overflow: hidden;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	-webkit-transition-property:height;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.color-temperature>li{
+	width: 180px;
+	height: 90px;
+	float: left;
+}
+.color-temperature>li>span{
+	font-size: 28px;
+	line-height: 90px;
+}
+.color-temperature>li>img{
+	visibility: hidden;
+}
+.check-show img{
+	visibility: visible!important;
+}
+.aspect-ratio{
+	width: 1280px;
+	float: left;
+	height: 180px;
+	left: 0px;
+	overflow: hidden;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	-webkit-transition-property:height;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.aspect-ratio>li{
+	width: 180px;
+	height: 90px;
+	float: left;
+}
+.aspect-ratio>li>span{
+	font-size: 26px;
+	line-height: 90px;
+}
+.aspect-ratio>li>img{
+	visibility: hidden;
+}
+.width-1280{
+	width: 1280px;
+}
+.sky-mode{
+	height: 720px;
+	width: 500px;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	left: 0px;
+	position: absolute;
+	float: left;
+	-webkit-transition-property:left;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.sky-mode table td{
+	font-size: 28px;
+}
+.sky-mode table td:nth-child(1){
+	width: 250px;
+}
+.sky-mode-state{
+	width: 800px;
+	height: 0px;
+	left: 0px;
+	float: left;
+	overflow: hidden;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	-webkit-transition-property:height;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}
+.sky-mode-state>li{
+	width: 180px;
+	height: 90px;
+	margin-top: 45px;
+	float: left;
+}
+.sky-mode-state>li>span{
+	float: left;
+	font-size: 28px;
+	margin-top: 30px;
+}
+.sky-mode-state>li>img{
+	visibility: hidden;
+	float: left;
+	margin-top: 35px;
+}
+.edit-show{
+	height: 180px!important;
+}
+.sound{
+	position: absolute;
+	height: auto
+}
+.sound>li:nth-child(1){
+	margin-top: 0px;
+}
+.output>li>span{
+	font-size: 28px;
+	padding-right: 30px;
+}
+.output>li>img{
+	visibility: hidden;
+}
+.output>li{
+	float: left;
+	margin-left: 10px;
+	line-height: 90px;
+	margin-top: 45px;
+}
+.output-edit{
+	height: 0px;
+	width: auto;
+	overflow: hidden;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+	-webkit-transition-property:height;
+	-webkit-transition-duration:.3s;
+	-webkit-transition-timing-function:ease;
+}

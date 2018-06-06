@@ -1,0 +1,74 @@
+ <!doctype html>
+<html>
+<meta charset="utf-8">
+<title>FileExplorer</title>
+
+<link href="../common/css/base.css" rel="stylesheet" type="text/css">
+<link href="./css/FileExplorer.css"  rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="left">
+	<div class="left-title">
+		<div class="left-title-select">Disks</div>
+		<div>Types</div>
+	</div>
+	<div class="left-content">
+		<ul id="js_disk" class="left-ul-select">
+		</ul>
+		<ul id="js_category">
+			<li>Folder</li>
+			<li>Picture</li>
+			<li>Video</li>
+			<li>Document</li>
+			<li>Other</li>
+		</ul>
+	</div>
+</div>
+<div class="top" id="js_top">
+	<div class="top-title" id="js_topTitle">
+		<span>Media</span>&gt;<span>Folder1</span>&gt;<span>Folder</span>
+	</div>
+	<div class="top-search" id="js_topSearch">
+		<img src="./img/search.png" />
+	</div>
+</div>	
+<div class="content-file">
+	<div class="content" id="js_content">
+		<div class="content-title">
+			<span>Folder</span>
+		</div>
+		<ul id="js_folderCon">
+		</ul>
+		<div class="content-title">
+			<span>Picture</span>
+		</div>
+		<ul id="js_pictureCon">
+		</ul>
+		<div class="content-title">
+			<span>Video</span>
+		</div>
+		<ul id="js_videoCon">
+		</ul>
+		<div class="content-title">
+			<span>Document</span>
+		</div>
+		<ul id="js_DocumentCon">
+		</ul>
+		<div class="content-title">
+			<span>Other</span>
+		</div>
+		<ul id="js_otherCon">
+		</ul>
+		
+	</div>
+</div>
+
+<div class="scrollBar" id="js_scroll">
+	<div></div>
+</div>
+	<script src="../common/js/jquery.min.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="js/FileExplorer.js"></script>
+</body>
+</html>

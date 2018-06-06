@@ -1,0 +1,126 @@
+body{
+    background-color: #CCCCCC;
+    font-family: 微软雅黑;
+    font-size: large;
+    color: #fff;
+}
+.all{
+    position: relative;
+    width:50%;
+    overflow: hidden;
+    animation: trans 1s ease-out;
+    z-index: 100;
+}
+@keyframes trans {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.all .all-title{
+    position: relative;
+    height:50px;
+    color: #000000;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.all .all-ul{
+    margin-top: -5px;
+    position: relative;
+    width: 100%;
+}
+/*.all-opacity{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #262626;
+    opacity: 0.2;
+    top: 50px;
+}*/
+
+.all .all-ul .all-ul-row{
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.all .all-ul .all-ul-row > li:nth-child(1){
+    position: relative;
+    width: 30%;
+}
+
+.all .all-ul .all-ul-row li{
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+
+}
+.all .all-ul .all-ul-row > li:nth-child(2) {
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+.all .all-ul .all-ul-row  .options {
+    margin-top: 18px;
+}
+.all .all-ul .all-ul-row > li .option > div{
+    position: relative;
+    width: 28%;
+    margin-left: 15px;
+    float: left;
+    height: 40px;
+    font-size: 10px;
+}
+.all .all-ul .all-ul-row > li .option > div:nth-child(2){
+     position: relative;
+     width: 28%;
+     margin-left: 15px;
+     float: left;
+     height: 40px;
+    font-size: 15px;
+ }
+.option-selected{
+    color:#333333;
+}
+.option-middle-seleted{
+    color: #000000;
+}
+.all .all-ul .all-ul-row > li .option {
+    position: relative;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.no-selected{
+    background-color: gray;
+}
+.selected{
+    background-color: #269abc;
+}
+.two-li-selected{
+    background-color: #269abc;
+    color: #000000;
+}
+.one-li-selected{
+    color: #269abc;
+}
+.left-animation{
+    transition: transform 0.5s ease-in;
+    transform: translate(-80px);
+}
+.right-animation{
+    transition:transform 0.5s ease-out;
+    transform:translate(0px);
+}

@@ -1,0 +1,45 @@
+body{
+	color:white;
+}
+.format_dir{
+	width:98%;
+	height:10%;
+	margin:1% auto 0 auto;
+}
+.format_tb{
+	width:98%;
+	height:70%;
+	margin:0 auto 0 auto;
+}
+.format_sel{
+	width:98%;
+	height:16%;
+	margin:0 auto 0 auto;
+}
+.format_table{
+	width:100%;
+	height:100%;
+}
+.format_dir,.format_tb,.format_sel{
+	background:rgb(176,176,176);
+}
+.container{
+	width:50%;
+	height:40%;
+	#background:green;
+}
+.div_center{
+	margin:auto auto auto auto;
+}
+.bt_cancle,.bt_ok{
+	background:rgb(149,149,149);
+	width:49%;
+	height:100%;
+}
+.span_vc{
+	line-height:50px;
+	height:50px;
+}
+.format_bt_focus{
+	background:rgb(91,154,212);
+}

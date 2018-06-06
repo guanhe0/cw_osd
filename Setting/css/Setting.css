@@ -1,0 +1,139 @@
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2016-02-18
+*Description: setting css  style
+******************/
+body{
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+	color: white;
+	font-family: "fangzhenglanting";
+}
+.menuBar{
+	height: 720px;
+	float: left;
+	/*background:url(../images/menu-bar-bg.png);*/
+	background-color: rgba(176,176,176,0.3);
+	
+}
+.menuBar>ul{
+	-webkit-transition:margin-left .8s ease 0s;
+	width: 176px;
+	height: 720px;
+	margin-left: 0px;
+}
+.bar-hide{
+	margin-left: -176px!important;
+}
+.menuBar>ul>li{
+	width: 100%;
+	height: 144px;
+	position: relative;
+}
+/*.menuBar>ul>li:nth-child(2n){
+	background-color:rgba(164,164,164,0.5);
+}*/
+.menuBar>ul>li>span{
+	display: block;
+	width: 176px;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	font-size: 20px;
+}
+.menuBar>ul>li>img{
+	margin-left: 45px;
+	margin-top: 17px;
+}
+.is-selected-bg{
+	/*background: url(../images/is-selected.png) no-repeat bottom;*/
+	background-color: #0099ff!important;
+}
+.is-selected-color{
+	/*background: url(../images/time-li-selected.png) no-repeat!important;*/
+	background-color: #0099ff!important;
+
+}
+.is-selected-blue{
+	background-color: #0099ff!important;
+}
+.showBox{
+	height: 720px;
+	width: 1104px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	
+}
+.netType{
+	width: 1090px;
+	height: 160px;
+	border-bottom: 5px solid #8A8A8A;
+}
+.netType>ul{
+	font-size: 30px;
+	float: left;
+}
+.netType>ul>li{
+	float: left;
+	margin-left: 40px;
+	margin-top: 90px;
+	height: 60px;
+	line-height: 60px;
+	width: 300px;
+	text-align: center;
+	list-style: disc;
+	list-style-position: inside;
+}
+.netType>ul>li:nth-child(2){
+	margin-left: 100px;
+}
+.wiredShow{
+	width: 1090px;
+	height: 555px;
+}
+.wiredTitle{
+	font-size: 30px;
+	float: left;
+}
+.wiredTitle>li{
+	float: left;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+.wiredTitle>li:nth-child(2){
+	margin-left: 100px;
+}
+.info-DHCP{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-left: 80px;
+	margin-top: 30px;
+}
+.info-DHCP>div{
+	font-size: 30px;
+}
+.info-DHCP>div>div{
+	float: left;
+	width: 180px;
+	height: 100px;
+	line-height: 100px;
+}
+.info-DHCP>div>span{
+	float: left;
+	width: 220px;
+	height: 100px;
+	line-height: 100px;
+}
+.color-blue{
+	/*color:#30C5DC!important;*/
+}
+.height-none{
+	height: 0px!important;
+}
+.width-none{
+	width: 0px!important;
+}

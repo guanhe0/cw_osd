@@ -1,0 +1,21 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:zhaojie
+*Date:2015-12-04
+*Description:picture manager css  style
+******************/
+body{
+	font-size:16px;
+}
+.no-signal{
+	width:160px;
+	height:120px;
+	line-height:100px;
+	background:#0099ff;
+	border-radius:5px;
+	text-align:center;
+	color:#ffffff;
+	margin-top:10px;
+	margin-left:10px;
+}

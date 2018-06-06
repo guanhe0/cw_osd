@@ -1,0 +1,46 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2015-12-12
+*Description:the css file of disSelect.html
+******************/
+body{
+	background-color:#CCC;
+	font-family: "微软雅黑"；
+}
+.select-list{
+	width:100%;
+	height:200px;
+	position:absolute;
+	bottom:0px;
+	background-color:rgba(55,55,55,0.4);
+
+}
+.select-list-usb{
+	margin-top: 22px;
+	margin-left: 20px;
+	width: 28px;
+	height: 40px;
+	float: left;
+}
+.select-list-text{
+	font-size: 26px;
+	margin-top: 25px;
+	margin-left: 65px;
+	color: #FFF;
+}
+ul{
+	padding-left: 45px;
+	padding-top: 20px;
+}
+.select-list-li{
+	color: #FFF;
+	font-size: 20px;
+	float: left;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}

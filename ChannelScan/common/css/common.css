@@ -1,0 +1,269 @@
+body{
+    font-family:"微软雅黑";
+    font-size: 20px;
+    height: 720px;
+    width: 1280px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    /*background-image: url("../../common/img/bg.png");
+    background-repeat: no-repeat;*/
+    overflow: hidden;
+}
+.all{
+    font-family:"微软雅黑";
+    font-size: 20px;
+    height: 720px;
+    width: 1280px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin:0;
+    padding:0;
+}
+/*透明层*/
+.mask{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 720px;
+    width: 1280px;
+    display: block;
+    /*background-image: -webkit-gradient(linear,0 720,1280 720,from(rgba(0,0,0,0.8)),to(rgba(0,0,0,0.2)));
+    */
+    background-image: -webkit-linear-gradient(0deg,rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.1 ) 100%);
+    z-index: -1;
+}
+.mask2{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 720px;
+    width: 1280px;
+    display: none;
+    background-color: #000000;
+    opacity: 0.5;
+
+}
+.singleList{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    color: #ffffff;
+    z-index: 1000;
+}
+.all-div{
+    height: inherit;
+    width: inherit;
+    /*display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;*/
+}
+.all-div > div{
+    height: inherit;
+    width: inherit;
+}
+.info-title{
+    width: inherit;
+    height: 70px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 70px;
+}
+.button-ul{
+    width: inherit;
+    height: 100px;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: -10px;
+    color: #ffffff;
+}
+.button-ul>li{
+    list-style: none;
+    float: left;
+    height: 60px;
+    color: #ffffff;
+    width: 130px;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    background-color: rgba(0,0,0,0.6);
+}
+/*在自动搜台时下面的透明层，用来提示当前操作*/
+.option-direct{
+    position: absolute;
+    width: 210px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    bottom: 100px;
+    left: 50px;
+    display: block;
+}
+/*在手动搜台时下面的透明层，用来提示当前操作*/
+.mannual-option-direct{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    line-height:250px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    left: 500px;
+    bottom: 300px;
+    display:block;
+}
+/*search界面的标题*/
+.menu-title{
+    width: 1250px;
+    height: 70px;
+    line-height: 90px;
+    padding-left: 30px;
+    background-image: -webkit-linear-gradient(0deg,rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.3 ) 100%);
+}
+.auto-search-btn{
+    width:130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.auto-singal-ul{
+    float: left;
+    margin-top: 40px;
+}
+.auto-singal-ul >li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 70px;
+
+}
+.mannual-search-btn{
+    width:130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 140px;
+}
+/*手动搜台模块*/
+.mannual-singal-ul{
+    float: left;
+    margin-top: 40px;
+
+}
+.mannual-singal-ul >li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-left: 70px;
+}
+
+/*进度条*/
+.processer{
+    background-color: #0195FF;
+    width:0px;
+    position: absolute;
+    height: 5px;
+    display: block;
+}
+/*在搜台页面时，下面的exit、Done、Retry按钮样式*/
+.exit-button{
+    position: relative;
+    float: right;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background-color: gray;
+    margin-top: 90px;
+}
+.done-retry-ul{
+    font-size: 14px;
+    width: 1000px;
+    height: 100px;
+    list-style: none;
+    margin-top: 40px;
+}
+.done-retry-ul>li{
+    width: 130px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #A4A4A4;
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
+}
+/*水平显示的列表*/
+.h-list{
+    position: relative;
+    list-style: none;
+    width: 1200px;
+    height: 60px;
+    margin-left: 90px;
+    margin-top: -60px;
+    /**margin-left: -20px;/*在li下面显示时*/
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+}
+.h-list > li{
+    list-style: none;
+    width: 130px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.search-ul{
+    position: relative;
+    list-style: none;
+    margin-top: 70px;
+
+}
+.search-ul > li{
+    list-style: none;
+    width: inherit;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 35px;
+    text-align: left;
+}
+.search-ul-dvbt > li {
+    list-style: none;
+    width: inherit;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.search-ul > li > span:nth-child(2){
+    margin-left: 100px;
+}
+.search-ul-dvbt{
+    position: relative;
+    list-style: none;
+    margin-top: 70px;
+    width: 140px;
+}
+
+.content-div{
+    width: inherit;
+    height: inherit;
+}
+.selected{
+    background-color: #0099FF!important;
+}

@@ -1,0 +1,67 @@
+/* CSS Document */
+ul{
+	width:100%;
+	height:100%;
+	float: left;
+}
+.day{
+ width: 80px;
+ height: 98%;
+ margin-top: 1%;
+ float: left;
+}
+.day>ul>li{
+	height:150px;
+	width: 100%;
+	float: left;
+	background: #b0b0b0;
+	line-height: 150px;
+	text-align: center;
+}
+.day>ul>li:nth-child(2n){
+	background: #a5a5a5;
+}
+.day-select{
+	height: 420px!important;
+	line-height: 420px!important;
+	-webkit-transition-duration:0s!important;
+	-webkit-transition-timing-function:ease-out;
+}
+.channel{
+	width: 200px;
+}
+.time{
+	width: 250px;
+}
+.program{
+	width: 500px;
+}
+.channel,.time,.program{
+	height: 98%;
+	margin-top: 1%;
+	float: left;
+	margin-left: 10px;
+}
+.title{
+	width: 100%;
+	height: 110px;
+	float: left; 
+	margin-bottom: 10px;
+	background: #898989;
+	line-height: 110px;
+	text-align: center;
+}
+.channel>ul,.time>ul,.program>ul{
+	height: 600px;
+	overflow: hidden;
+}
+.channel>ul>li,.time>ul>li,.program>ul>li{
+	height: 100px;
+	width: 95%;
+	padding-left: 5%;
+	line-height: 100px;
+	background: #b0b0b0;
+}
+.channel>ul>li:nth-child(2n),.time>ul>li:nth-child(2n),.program>ul>li:nth-child(2n){
+	background: #a5a5a5;
+}

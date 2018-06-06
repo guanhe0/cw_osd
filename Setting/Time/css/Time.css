@@ -1,0 +1,202 @@
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2016-02-28
+*Description: setting css  style,this file is mainly for the class of time part
+******************/
+
+.timeInfo{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	height: 720px;
+	background-image: -webkit-gradient(linear, 0 0, right 0, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+}
+.title{
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 50px;
+	float: left;
+	margin-bottom: 30px;
+	color:white;
+	width: 100%;
+	/*background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(124,4,67, 1)), to(rgba(172,4,93, 1)));*/
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+.timeInfo>li{
+	float: left;
+	list-style: none;
+	font-size: 28px;
+	width: 750px;
+	line-height: 100px;
+	color:white!important;
+	position: relative;
+	z-index: 8;
+	
+}
+
+/*.timeInfo>li:nth-child(2){
+	border-top: 2px solid #676666;
+}*/
+.liTitle>div:nth-child(1){
+	width: 250px;
+	float: left;
+	line-height: 100px;
+	margin-left: 50px;
+	font-size: 26px;
+}
+
+.timeEdit{
+	width:1104px;
+	margin-left: 0px!important;
+	height: 0px;
+	float: left;
+	font-size: 25px;
+	overflow: hidden;
+	-webkit-transition:height .5s ease 0s;
+	position: relative;
+	/*background: url(../images/time-edit-bg.png) no-repeat;*/
+	/*background-color: #868686;*/
+	z-index: 9;
+}
+.edit-show-350{
+	height: 350px!important;
+}
+.edit-show-240{
+	height: 240px!important;
+}
+.edit-show-200{
+	height: 200px!important;
+}
+.autoEdit{
+	list-style: none;
+	height: auto;
+	float: left;
+	margin-top: -60px;
+	width: 200px;
+}
+.autoEdit>li{
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	font-size: 25px;
+	width: 200px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	opacity: 0.5;
+	overflow: hidden;
+
+}
+.autoEdit>li:nth-child(3){
+	opacity: 1;
+	font-size: 30px;
+
+}
+.autoBox{
+	height: 240px;
+	width: 200px;
+	margin-top: 70px;
+	float: left;
+	overflow: hidden;
+	-webkit-transition:width .5s ease 0s;
+}
+.tab-show{
+	position: absolute;
+	width: 200px;
+	height: 80px;
+	top: 172px;
+	left: 0px;
+	/*background: url(../images/time-edit-selected.png) no-repeat;*/
+	-webkit-transition-property:left,width;
+	-webkit-transition-duration: .5s ;
+	-webkit-transition-timing-function:ease;
+	background-color: #0099FF;
+}
+
+
+.clock{
+	height: 340px;
+	width: 150px;
+	float: left;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+.clock>div:nth-child(1){
+	text-align: center;
+	font-size: 25px;
+	line-height: 50px;
+	float: left;
+	width:100%;
+	height:50px;
+	opacity:0.5;
+}
+.clock>div:nth-child(2){
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	margin-top: 70px;
+}
+.tab-ul{
+	list-style: none;
+	height: auto;
+	float: left;
+	margin-top: -80px;
+	width: 100%;
+}
+.tab-ul>li{
+	height: 80px;
+	float: left;
+	line-height: 80px;
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	opacity: 0.5;
+	overflow: hidden;
+
+}
+.tab-ul>li:nth-child(3){
+	opacity: 1;
+	font-size: 30px;
+}
+.symbol{
+	width: 30px;
+	margin-left: 0px;
+}
+.width-100{
+	width: 100px!important;
+}
+.width-200{
+	width: 200px!important;
+}
+.zoneEdit{
+	margin-top: 0px!important;
+}
+.city{
+	margin-top: -80px!important;
+	margin-left:50px!important;
+}
+.sleep-time{
+	height: 60px;
+	margin-top: 70px;
+	float: left;
+}
+.sleep-time>li{
+	float: left;
+	width: 150px;
+	line-height: 60px;
+	margin-left: 33px;
+}
+.sleep-time>li>img{
+	visibility: hidden;
+	/*margin-left: -10px;*/
+}
+.sleep-time-select img{
+	visibility: visible!important;
+}
+.sleep-time-select-only{
+	background: #0099ff;
+}

@@ -1,0 +1,62 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2015-12-14
+*Description:the css file of mediaPlayer.html
+******************/
+body{
+	background-color:#CCC;
+	font-family: "微软雅黑"；
+}
+.control-bar{
+	background-color: rgba(55,55,55,0.4);
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+.control-bar-btns{
+	padding-top: 40px;
+	padding-left: 45px;
+}
+
+.control-bar-btns li{
+	height: 86px;
+	width: 156px;
+	text-align: center;
+	float: left;
+}
+
+.control-bar-btns div
+{
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	background-color: #ACACAC;
+	border-radius: 38px 38px;
+	border:3px solid #DADADA;
+	margin-top: 5px;
+}
+
+.li-selected{
+	background-color: white !important;
+	border: 3px solid #45AEF4 !important;
+	width: 80px !important;
+	height: 80px !important;
+	border-radius: 43px !important;
+	margin-top: 0px !important;
+}
+.control-bar-titles{
+	padding-top: 10px;
+	padding-left: 45px;
+}
+.control-bar-titles li{
+	float: left;
+	width: 156px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	vertical-align: top;
+}
+

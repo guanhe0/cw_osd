@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application name="OceanusTV" src="/OceanusTV/OceanusTV.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="Setting" src="/Setting/Setting.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="ProgramCenter" src="/ProgramCenter/ProgramCenter.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="ChannelScan" src="/ChannelScan/ChannelScan.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="Epg" src="/Epg/Epg.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="MediaPlayer" src="/MediaPlayer/MediaPlayer.html" icon="NULL">
+	<Mainwindow theme="default" style="default">S
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="Home" src="/Home/Home.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>
+
+<Application name="FileExplorer" src="/FileExplorer/FileExplorer.html" icon="NULL">
+	<Mainwindow theme="default" style="default">
+		<Rect
+		x="0"
+		y="0"
+		w="1280"
+		h="720">
+		</Rect>
+	</Mainwindow>
+	<Version>0.1.0</Version>
+	<Permission type="osd">system</Permission>
+</Application>

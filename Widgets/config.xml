@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget name="SystemLuncher" src="/SystemLuncher/SystemLuncher.html">
+		<rect>
+			<x>0</x>
+			<y>0</y>
+			<h>1280</h>
+			<w>720</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="VolumeControl" src="/VolumeControl/VolumeControl.html">
+		<rect>
+			<x>340</x>
+			<y>570</y>
+			<h>150</h>
+			<w>600</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="NtfDropdownBox" src="/NtfDropdownBox/NtfDropdownBox.html">
+		<rect>
+			<x>780</x>
+			<y>0</y>
+			<h>450</h>
+			<w>500</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="Simple2" src="/simple2/simple.html">
+		<rect>
+			<x>300</x>
+			<y>0</y>
+			<h>300</h>
+			<w>300</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="Inputmethod" src="/inputmethod/inputmethod.html">
+		<rect>
+			<x>140</x>
+			<y>130</y>
+			<h>400</h>
+			<w>999</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="AutoScan" src="/AutoScan/AutoScan.html">
+		<rect>
+			<x>0</x>
+			<y>0</y>
+			<h>720</h>
+			<w>1280</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="ManualScan" src="/ManualScan/ManualScan.html">
+		<rect>
+			<x>0</x>
+			<y>0</y>
+			<h>720</h>
+			<w>1280</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>
+<widget name="Source" src="/Source/Source.html">
+		<rect>
+			<x>0</x>
+			<y>520</y>
+			<h>200</h>
+			<w>1280</w>
+		</rect>
+		<authorization>system</authorization>
+</widget>

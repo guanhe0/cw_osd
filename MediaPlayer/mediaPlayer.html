@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MediaPlayer</title>
+    <link rel="stylesheet" type="text/css" href="../common/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap-glyphicon.min.css">
+    <link rel="stylesheet" type="text/css" href="css/MediaPlayer.css">
+</head>
+<body>
+<div class="video-all-div" id="js-all-video">
+    <video id="js-video" poster="img/video.png" preload="metadata">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="video-div" id="js-videoDiv">
+        <div class="processer">
+            <div class="timeBar"></div>
+            <div class="bufferBar"></div>
+        </div><!--进度条-->
+        <ul class="video-ul" id="js-videoUl">
+            <li data-index="0"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></li>
+            <li data-index="1"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></li>
+            <li data-index="2"><span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span></li>
+            <li data-index="3"><span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span></li>
+        </ul>
+        <div class="time-div">
+            <span id="js-currTime">00:00:00</span>/
+            <span id="js-duration">00:00:00</span>
+        </div>
+        <div class="move-div" id="js-moveDiv">
+            <span class="glyphicon glyphicon-move" aria-hidden="true"></span>
+        </div>
+        <div class="list-div" id="js-listDiv">
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="menu-div" id="js-menuDiv">
+        <ul class="menu-ul" id="js-menuUl">
+            <li data-index="0">
+                <div class="menu-content">
+                    <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+                    <span>观看历史</span>
+                    <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                </div>
+                <ul class="history-ul" id="js-historyUl">
+                    <!--<li data-index="0"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="1"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="2"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="3"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="4"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="5"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="6"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="7"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                    <li data-index="8"><span class="glyphicon glyphicon-play" aria-hidden="true"></span><span>Movie Name...</span></li>
+                --></ul>
+            </li>
+            <li data-index="1">
+                <div class="menu-content">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    <span>影片列表</span>
+                    <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                </div>
+                <div>
+
+                </div>
+            </li>
+            <li data-index="2">
+                <div class="menu-content">
+                    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <span>设置</span>
+                    <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                </div>
+                <div class="set-div" id="js-setDiv">
+                    <div class="setting-div" id="js-settingDiv">
+                        <span class="set-title">语言</span>
+                        <span class="set-title" id="js-languageSpan">
+                            <!--<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                            <span>English</span>
+                            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>-->
+                        </span>
+                    </div>
+                    <div>
+                        <div class="set-title">影片比例</div>
+                        <ul class="scale-ul" id="js-scaleUl">
+                            <li data-index="0"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span>Auto</span></li>
+                            <li data-index="1"><!--<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>--><span>16:9</span></li>
+                            <li data-index="2"><!--<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>--><span>4:3 </span></li>
+                        </ul>
+                    </div>
+
+                    <div class="set-title" id="js-addText">添加字幕</div>
+                </div>
+            </li>
+            <li data-index="3">
+                <div class="menu-content">
+                    <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+                    <span>单帧截图</span>
+                    <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                </div>
+            </li>
+            <li data-index="4">
+                <div class="menu-content">
+                    <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+                    <span>截取片段</span>
+                    <!--<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>-->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="saveimg-div" id="js-saveimgDiv">
+        <div class="row-div">
+            <span>保存名称</span><input type="text" />
+        </div>
+        <div class="row-div">
+            <span>保存路径</span><input type="file"/>
+        </div>
+        <div class="row-div">
+            <span>图片格式</span>
+            <select class="select">
+                <option>JPEG</option>
+                <option>PNG</option>
+                <option>GIF</option>
+            </select>
+        </div>
+        <div class="row-div button">
+            <input type="button" value="保存"/>
+            <input type="button" value="取消"/>
+        </div>
+
+    </div>
+</div>
+
+<script src="../common/js/jquery.min.js"></script>
+<script src="../common/js/common.js"></script>
+<script src="js/MediaPlayer.js"></script>
+
+</body>
+</html>

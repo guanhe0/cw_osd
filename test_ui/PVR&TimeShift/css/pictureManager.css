@@ -1,0 +1,109 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:zhaojie
+*Date:2015-12-04
+*Description:picture manager css  style
+******************/
+body{
+	font-size:16px;
+}
+.head{
+	margin-top:10px;
+	margin-left:10px;
+	width:30%;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#FFF;
+	background:#999999;
+	border-radius:8px 8px 0px 0px; 
+}
+.content{
+	margin-left:10px;
+	width:30%;
+	height:auto;
+	background-color:#ebebeb;
+	border-radius:0px 0px 8px 8px;
+	float:left;
+}
+.content>ul{
+	width:90%;
+	height:auto;
+	list-style:none;
+	float:left;
+	margin-left:5%;
+}
+.content>ul>li{
+	color:#FFF;
+	font-size:14px;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#cccccc;
+	margin-bottom:5PX;
+	margin-top:5px;
+	border:2px #cccccc solid;
+	border-radius:4px 4px 4px 4px;
+}
+.content-li-nouse{
+	background:#afafaf!important;
+	border:2px solid #afafaf!important;
+}
+.content-li-selected{
+	border:solid #0099ff 2px!important;
+	border-radius:5px;
+	font-size:18px!important;
+}
+.content ul li:last-child{
+	border-bottom:none;
+}
+.pic-mode{
+	width:250px;
+	height:40px;
+	float:right;
+}
+.pic-mode ul{
+	height:40px;
+	width:100%;
+	list-style:none;
+	overflow:hidden;
+}
+.pic-mode ul li{
+	height:100%;
+	float:left;
+	width:80px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+}
+#js_picmode>li{
+	color:#f8f8f8;
+}
+#js_picmode>li:nth-child(2){
+	color:#FFF;
+	font-weight:700;
+}
+
+.contrast{
+	width:220px;
+	height:20px;
+	background:#93d4ff;
+	float:right;
+	border-radius:5px;
+	margin-top:10px;
+	margin-right:5px;
+}
+.contrast-has{
+	height:100%;
+	float:left;
+	background:#0099ff;
+	border-radius:5px;
+	line-height:20px;
+	text-align:right;
+	font-weight:700;
+}
+.centtext>ul li{
+	text-align:center;
+}

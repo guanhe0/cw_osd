@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MannualSearch</title>
+    <link rel="stylesheet" type="text/css" href="../../ChannelScan/common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/ManualScan.css">
+
+    <script src="../../common/js/jquery.min.js"></script>
+    <script src="../../common/js/common.js"></script>
+    <script src="js/ManualScan.js"></script>
+
+    <script src="../../ChannelScan/common/js/common.js"></script>
+</head>
+<body>
+<div class="mask"></div>
+<div id="js-all" class="all">
+    <!--没搜台之前选择信源-->
+    <div >
+        <div class="menu-title">Mannual Search</div>
+        <ul class="search-ul-dvbt" id="js-singalUl">
+            <li><span>Atv </span></li>
+            <li><span>DVBS</span></li>
+            <li><span>DVBC</span></li>
+            <li><span>DVBT</span></li>
+        </ul>
+        <div class="mannual-option-direct" >
+            操作指引区域
+        </div>
+
+    </div>
+    <!--手动ATV搜台微调界面-->
+    <div id="js-atv1">
+        <div class="menu-title">ATV Mannual Search</div>
+        <div class="processer"></div><!--进度条-->
+        <div class="frequency"><span>Frequency: </span><span id="js-frequency">55.75</span><!--<span id="js-unit">MHZ</span>--></div>
+        <ul class="manual-search-ul" id="js-atvSettingUl">
+            <li>
+                <span>Search</span>
+                <span><-></span>
+                <div class="mouse-option-div">
+                    <img src="../../ChannelScan/common/img/left.png" />
+                    <img src="../../ChannelScan/common/img/right.png"/>
+                </div>
+            </li>
+            <li>
+                <span>Fine-Tune</span>
+                <span><-></span>
+                <div class="mouse-option-div">
+                    <img src="../../ChannelScan/common/img/left.png" />
+                    <img src="../../ChannelScan/common/img/right.png"/>
+                </div>
+            </li>
+            <li><span>Storage To</span> <span><-</span><span id="js-storage">55 </span><span>-></span></li>
+            <li><span>Current</span>    <span><-CH-</span><span id="js-current">55</span><span>-></span></li>
+            <li><span>Sound System</span>     <span><-</span><span id="js-sound">BG</span><span>-></span></li>
+            <li><span>Color System</span>     <span><-</span><span id="js-color">PAL</span><span>-></span></li>
+
+        </ul>
+        <!--<div class="mannual-option-direct">
+            操作指引区域
+        </div>-->
+    </div>
+    <!--手动ATV搜台开始-->
+    <div id="js-atv2">
+        <div class="menu-title">ATV Mannual Search</div>
+        <div class="processer"></div>
+        <ul class="search-ul" id="js-stvSearchUl">
+            <li><span>TV Program</span><span>5</span></li>
+            <li><span>Frequency</span><span>43.222MHZ</span></li>
+            <li><span>CH.Seg</span><span>UHF</span></li>
+        </ul>
+
+        <!--<ul class="done-retry-ul">
+            <li >Exit</li>
+            <li >Done</li>
+            <li >Retry</li>
+        </ul>-->
+    </div>
+    <!--DVB-T手动搜台微调页面-->
+    <div id="js-dvbt">
+        <div class="menu-title">DVB-T Mannual Search</div>
+        <div class="processer"></div><!--进度条-->
+        <div class="dbvt-title" id="js-dvbtVHF">
+            <input type="text" id="js-channelInput" placeholder="请输入频点"/>
+            <ul class="keyboard-ul" id="js-keyboard">
+                <li class="keyboard-ul-li">1</li>
+                <li class="keyboard-ul-li">2</li>
+                <li class="keyboard-ul-li">3</li>
+                <li class="keyboard-ul-li">4</li>
+                <li class="keyboard-ul-li">5</li>
+                <li class="keyboard-ul-li">.</li>
+                <li class="keyboard-ul-li"><-</li>
+                <li class="keyboard-ul-li">6</li>
+                <li class="keyboard-ul-li">7</li>
+                <li class="keyboard-ul-li">8</li>
+                <li class="keyboard-ul-li">9</li>
+                <li class="keyboard-ul-li">0</li>
+
+                <li class="keyboard-ul-li">Enter</li>
+            </ul>
+        </div>
+        <!--<ul class="mannual-singal-ul" id="js-dvbtSearchUl">
+            <li>CH5</li>
+            <li>CH6</li>
+            <li>CH7</li>
+            <li>CH8</li>
+            <li>CH9</li>
+            <li>CH1</li>
+        </ul>-->
+
+        <!--<ul class="done-retry-ul">
+            <li >Exit</li>
+            <li >Search</li>
+            <li >Done</li>
+        </ul>-->
+        <div id="js-dvbtProgram">
+            <div class="dvbt-program">
+                <span>DTV:</span>
+                <span id="js-dtvSpan">0</span></div>
+            <div class="dvbt-program">
+                <span>Data:</span>
+                <span id="js-dataSpan">0</span>
+            </div>
+            <div class="dvbt-program" id="js-radio">
+                <span>Radio:</span>
+                <span id="js-radioSpan">0</span>
+            </div>
+        </div>
+        <div class="singal-quality-show">
+            <div class="quality-title">Singal Quality</div>
+            <div class="quality-processer"></div>
+        </div>
+        <div id="js-warning"></div>
+    </div>
+
+</div>
+<ul class="done-retry-ul" id="js-search-resultBtn">
+</ul>
+<!--<div class="mannual-option-direct" id="js-optionDirect">
+    操作指引区域
+</div>-->
+<div id="js-mask" class="mask2"></div>
+<div id="js-singleSetting" class="singleList">
+    <div class="info-title">是否要终止搜台？</div>
+    <ul class="button-ul">
+        <li class="button-ul-li">确定</li>
+        <li class="button-ul-li">取消</li>
+    </ul>
+</div>
+<div class="mouse-option-div">
+    <img src="../../ChannelScan/common/img/left.png" />
+    <img src="../../ChannelScan/common/img/right.png"/>
+</div>
+</body>
+</html>

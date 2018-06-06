@@ -1,0 +1,52 @@
+/* CSS document*/
+
+/*****************
+*Copyright:Skyworth
+*Author:shibei
+*Date:2016-1-13
+*Description:subtitle module css  style
+******************/
+body {
+	font-family: "Microsoft YaHei";
+	color: white;
+	margin: 5px!important;
+}
+.title {
+	font-weight: bold;
+	display: inline-block;
+	font-size: 25px;
+	width: 700px;
+	background-color: #919191;
+	text-align: center;
+	margin: 0px;
+	line-height: 50px;
+}
+.content {
+	font-size: 20px;
+	display: block;
+	width: 700px;
+	line-height: 50px;
+	border: 1px solid #919191;
+	text-align: center;
+	height: 50px;
+	color:black;
+}
+span {
+	display: inline-block;
+	line-height: 32px;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+}
+ul>li {
+	background-color: #999;
+	border: 1px solid #919191;
+	font-size: 17px;
+	line-height: 40px;
+	width: 400px;
+	margin-left: 0px;
+}
+.is-selected{
+	background-color: #0099FF !important;
+}

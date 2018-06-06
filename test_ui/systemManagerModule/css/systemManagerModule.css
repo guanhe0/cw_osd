@@ -1,0 +1,207 @@
+body{
+    font-family: 微软雅黑;
+    font-size: large;
+    color: #fff;
+    overflow: hidden;
+}
+.all{
+    position: relative;
+    width:50%;
+    overflow: hidden;
+    animation: trans 1s ease-out;
+    z-index: 100;
+}
+@keyframes trans {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.all .all-title{
+    position: relative;
+    height:50px;
+    color: #000000;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.all .all-ul{
+    margin-top: -5px;
+    position: relative;
+    width: 100%;
+}
+.all-ul-list{
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid red;
+    margin-left: 100px;
+}
+/*遮罩层样式*/
+.mask{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.8;
+    display:none;
+    z-index: 1000;
+}
+
+.password-div{
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 100000;
+    display: none;
+
+}
+.password-div .div-pass{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #444444;
+}
+.password-div ul{
+    list-style: none;
+    overflow: hidden;
+}
+.password-div ul > li{
+    list-style: none;
+    float: left;
+    overflow: hidden;
+}
+.input_pass{
+    position: relative;
+    background-color:gray;
+    width: 96px;
+    height: 100px;
+    text-align: center;
+    font-size: 70px;
+    color: #0099FF;
+
+
+}
+.all .all-ul .all-ul-row{
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+
+}
+
+.all .all-ul .all-ul-row > li:nth-child(1){
+    position: relative;
+    width: 30%;
+}
+
+.all .all-ul .all-ul-row li{
+    position: relative;
+    float: left;
+    list-style: none;
+    text-align: center;
+
+}
+.all .all-ul .all-ul-row > li:nth-child(2) {
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+.all .all-ul .all-ul-row  .options {
+    margin-top: 18px;
+}
+.all .all-ul .all-ul-row > li .option > div{
+    position: relative;
+    width: 28%;
+    margin-left: 15px;
+    float: left;
+    height: 40px;
+    font-size: 10px;
+}
+.all .all-ul .all-ul-row > li .option > div:nth-child(2){
+     position: relative;
+     width: 28%;
+     margin-left: 15px;
+     float: left;
+     height: 40px;
+    font-size: 15px;
+ }
+.option-selected{
+    color:#333333;
+}
+.option-middle-seleted{
+    color: #000000;
+}
+.all .all-ul .all-ul-row > li .option {
+    position: relative;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+.no-selected{
+    background-color: gray;
+}
+.selected{
+    background-color: #269abc;
+}
+.two-li-selected{
+    background-color: #269abc;
+    color: #000000;
+}
+.one-li-selected{
+    color: #269abc;
+}
+.left-animation{
+    transition: transform 0.5s ease-in;
+    transform: translate(-80px);
+}
+.right-animation{
+    transition:transform 0.5s ease-out;
+    transform:translate(0px);
+}
+.disable{
+    color:#ffffff;
+    opacity: 0.4;
+}
+
+
+/**
+networkSettingModule.html
+*/
+.all .all-ul .all-ul-row > li .option-value{
+    position: relative;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: inherit;
+}
+.button{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+

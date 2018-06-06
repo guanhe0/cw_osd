@@ -1,0 +1,40 @@
+body{
+  width: 1280px;
+  height: 200px;
+  font-family: "Microsoft Yahei"
+}
+.source{
+  width: 1024px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  clip: rect(205px 572px 516px 351px);
+  z-index: 50;    
+  transition: all 0.5s ease-in-out; 
+  border-radius: 20px;
+  background: url(../img/source.png) no-repeat;
+ }
+.source>ul>li{
+  width:200px;
+  float: left;
+  height: 100%;
+  text-align: center;
+  color:#FFF;
+  font-size: 23px;
+ }
+.source>ul>li img{
+  margin:0px auto;
+  margin-top: 40px;
+  width: 80px;
+  border-radius: 40px;
+ } 
+.source>ul>li span{
+  float: left;
+  width: 100%;
+ }
+.source-select img{
+  background: #7cd7ff;
+}
+.source-enter img{
+  background: #3ec3ff;
+}

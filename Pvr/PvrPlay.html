@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PvrPlay</title>
+
+<link href="../common/css/base.css" rel="stylesheet" type="text/css">
+<link href="./css/PvrPlay.css"  rel="stylesheet" type="text/css">
+<link href="./css/common.css"  rel="stylesheet" type="text/css">
+<script src="./src/image.js"></script>
+</head>
+
+<body>
+	<div class = "bottom">
+		<div class = "items">
+		<div class = "la" id = "play">
+			<img src = "./img/pause.jpg"/>
+		</div>
+		<div class = "la" id = "pause">
+			<img src = "./img/stop.png"/>
+		</div>
+		<div class = "la" id = "backword">
+			<img src = "./img/backword.jpg"/>
+		</div>
+		<div class = "la" id = "foreword">
+			<img src = "./img/foreword.jpg"/>
+		</div>
+		<div class = "la" id = "tvlist">
+			<img src = "./img/tvlist.jpg"/>
+		</div>
+		</div>
+		<div id = "playInfo">
+			<div id = "InfoLeft">
+				<div id = "PlayProgress">
+					<span id = "PlayProgressText">00:35:00/01:15:00</span>
+				</div>
+				<div id = "CurChannel">
+					<span id = "CurChannelText">CH 32 SBS TWO</span>
+				</div>
+			</div>
+			<div id = "InfoRight">
+				
+				<img id = "diskImg" src = "./img/disk.jpg"/>
+				<div id = "diskMem">
+					<span id = "diskMemLeft">51%</span>
+				</div>
+			</div>
+		</div>
+	</div >
+	<script src="../common/js/jquery.min.js"></script>
+	<script src="../common/js/common.js"></script>
+	<script src="js/PvrPlay.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AutoSearch</title>
+    <link rel="stylesheet" type="text/css" href="css/AutoScan.css">
+    <link rel="stylesheet" type="text/css" href="../../ChannelScan/common/css/common.css">
+
+    <script src="../../common/js/jquery.min.js"></script>
+    <script src="../../common/js/common.js"></script>
+    <script src="js/AutoScan.js"></script>
+    <script src="../../ChannelScan/common/js/common.js"></script>
+</head>
+<body>
+<div class="mask"></div>
+<div id="js-all" class="all">
+    <!--没搜台之前选择信源-->
+    <div class="content-div">
+        <div class="menu-title">Auto Search</div>
+        <div class="auto-search-btn" id="js-searchBtn">Search</div>
+        <ul class="auto-singal-ul" id="js-singalUl">
+            <li><span>All </span><img src="../../ChannelScan/common/img/select.png" class='img-selected'/></li>
+            <li><span>Atv </span><!--<img src="../common/img/select.png" />--></li>
+            <li><span>DVBS</span><!--<img src="../common/img/select.png" />--></li>
+            <li><span>DVBC</span><!--<img src="../common/img/select.png" />--></li>
+            <li><span>DVBT</span><!--<img src="../common/img/select.png" />--></li>
+        </ul>
+
+    </div>
+    <!--选择all时进入的搜台界面-->
+    <div id="js-search0" class="content-div">
+        <div class="menu-title">ALL Auto Search</div>
+        <div class="processer"></div><!--进度条-->
+        <ul class="search-ul" >
+            <li><span>ATV </span><span id="js-atvData">0</span></li>
+            <li><span>DTV </span><span id="js-dtvData">0</span></li>
+            <li><span>Radio </span><span id="js-radioData">0</span></li>
+            <li><span>Data </span><span id="js-data">0</span></li>
+        </ul>
+
+
+    </div>
+    <!--只选择atv时的搜台页面-->
+    <div id="js-search1" class="content-div">
+        <div class="menu-title">ATV Auto Search</div>
+        <div class="processer"></div><!--进度条-->
+        <ul class="search-ul">
+            <li><span>ATV </span><span id="js-atvData2">0</span></li>
+            <li><span id="js-frequency">750.24 MHZ</span></li>
+        </ul>
+
+
+    </div>
+
+    <!--DVB-S自动搜台-->
+    <div id="js-search2" class="content-div">
+    </div>
+    <!--DVB-C自动搜台-->
+    <div id="js-search3" class="content-div">
+    </div>
+    <!--DVB-T自动搜台-->
+    <div id="js-search4" class="content-div">
+        <div class="menu-title">DTV Tuning Mode</div>
+        <!--<div class="processer"></div>--><!--进度条-->
+        <ul class="search-ul-dvbt">
+            <li>
+                <span>A-E</span>
+            </li>
+            <li>
+                <span>F-J</span>
+            </li>
+            <li>
+                <span>K-O</span>
+            </li>
+            <li>
+                <span>P-T</span>
+            </li>
+            <li>
+                <span>U-Y</span>
+            </li>
+            <li>
+                <span>Z  </span>
+            </li>
+        </ul>
+
+        <!--<ul class="done-retry-ul">
+            <li >Exit</li>
+            <li >Done</li>
+            <li >Retry</li>
+        </ul>-->
+    </div>
+    <div id="js-dvbtSearch" class="content-div">
+        <div class="menu-title">DVB-T Auto Search</div>
+        <div class="processer"></div><!--进度条-->
+        <ul class="search-ul" >
+            <li><span>DTV:</span><span id="js-dvbDtv">0</span></li>
+            <li><span>Radio:</span><span id="js-dvbRadio">0</span></li>
+            <li><span>Data:</span><span id="js-dvbData">0</span></li>
+            <li><span>CH.NO:</span><span id="js-dvbCurRfNum">0</span></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<ul class="done-retry-ul" id="js-search-resultBtn">
+</ul>
+<div class="option-direct" id="js-optionDirect">
+    操作指引区域
+</div>
+<div id="js-mask" class="mask2"></div>
+<div id="js-singleSetting" class="singleList">
+    <div class="info-title">是否要终止搜台？</div>
+    <ul class="button-ul">
+        <li class="button-ul-li">确定</li>
+        <li class="button-ul-li">取消</li>
+    </ul>
+</div>
+</body>
+</html>

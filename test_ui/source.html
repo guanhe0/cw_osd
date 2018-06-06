@@ -1,0 +1,104 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sourcelist</title>
+<link href="common/css/base.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="enumlist.js"></script>
+<style type="text/css">
+body{
+	margin:0px;
+}
+ul{
+	list-style:none;width:200px; margin:0px; padding:0px;
+	border:#999 solid 1px;
+	float:left;
+}
+#sourceList li,#info li{
+	border-bottom:#F00 dashed 2px;
+	height:30px;
+	padding-top:10px;
+}
+#sourceList li:last-child,#info li:last-child{
+	border-bottom:none;
+}
+.select{
+	color:#00F;
+	font-size:20px;
+	background:#999;
+}
+.noselect{
+	color:#3F0;
+	font-size:14px;
+}
+.select_enter{
+	color:#F00;
+	font-size:20px;
+	background:#666;
+}
+</style>
+<script>
+	window.onload = function() {
+		//var list =[6,2,3,14];
+		var num =0;
+		var list = SourceManager.getSourceList();  //get  source list
+		if(SourceManager.getCurSource() != null){ 
+			for(var j=0;j<list.length;j++){
+				if(list[j] ==  SourceManager.getCurSource())  num = j;	
+			}
+		}//get current source
+		
+		var listNode = document.getElementById("sourceList");
+		for(var i = 0 ;i< list.length ;i++){
+			var li = document.createElement("li");
+			if(i == num)  li.setAttribute("class","select");
+			else li.setAttribute("class","noselect");
+			li.innerHTML = enumlist[list[i]];
+			listNode.appendChild(li);
+		}
+		//show source information
+		var infolist = document.getElementById("info").getElementsByTagName("li");
+		function showCurSource(){
+			//infolist.innerHTML = SourceManager.getCurSource();
+			infolist[0].innerHTML = "当前信源："+enumlist[SourceManager.getCurSource()];
+		}
+		showCurSource();
+		// set the keydown event
+	     document.onkeydown = function(event){
+		 var e = event || window.event || arguments.callee.caller.arguments[0];
+		 if(e && e.keyCode == 40){
+			listNode.childNodes[num+1].setAttribute("class","noselect");
+			 if(num == list.length-1) num=0;
+		 	 else num++
+		 }else if(e && e.keyCode==38){
+			listNode.childNodes[num+1].setAttribute("class","noselect");
+			if(num == 0 )  num=list.length-1;
+			else num--;
+		 }
+		 if(e && e.keyCode == 13){
+		 	listNode.childNodes[num+1].setAttribute("class","select_enter");
+			var inputSourceState = SourceManager.setInputSource(list[num]);
+			infolist[1].innerHTML = "选择信源返回参数："+inputSourceState;
+			showCurSource();
+		 }else{ 
+		 	listNode.childNodes[num+1].setAttribute("class","select");
+		 }
+		}
+	};
+	
+</script>
+</head>
+
+<body>
+<h2>Source  List  Test  </h2>
+<ul id="sourceList" >
+	
+</ul>
+<ul id="info">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</body>
+</html>

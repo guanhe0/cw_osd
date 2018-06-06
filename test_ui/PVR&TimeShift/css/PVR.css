@@ -1,0 +1,138 @@
+/* CSS document*/
+/*****************
+*Copyright:Skyworth
+*Author:zhaojie
+*Date:2015-12-04
+*Description:picture manager css  style
+******************/
+body{
+	font-size:20px;
+	color:#FFF!important;
+}
+.head{
+	margin-top:10px;
+	margin-left:10px;
+	width:450px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#FFF;
+	background:#ffce03;
+	border-radius:8px 8px 0px 0px; 
+}
+.content{
+	margin-left:10px;
+	width:450px;
+	height:auto;
+	background-color:#4c4d4f;
+	border-radius:0px 0px 8px 8px;
+	float:left;
+}
+.content>ul{
+	width:90%;
+	height:auto;
+	list-style:none;
+	float:left;
+	margin-left:5%;
+}
+.content>ul>li{
+	color:#FFF;
+	font-size:14px;
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:#ff9600;
+	margin-bottom:5PX;
+	margin-top:5px;
+	border-radius:4px 4px 4px 4px;
+	padding-left:5px;
+}
+
+.li-left{
+	width:160px;
+	height:40px;
+	float:right;
+	margin-right:5px;
+	line-height:40px;
+	text-align:center;
+}
+
+.content-li-nouse{
+	background:#afafaf!important;
+	border:2px solid #afafaf!important;
+}
+.content-li-selected{
+	background:#ffce03!important;
+	border-radius:5px;
+	font-size:18px!important;
+}
+
+.bottom{
+	width:100%;
+	height:200px;
+	position:absolute;
+	bottom:0px;
+	background:#333;
+}
+.bottom>ul>li{
+	height:140px;
+	width:70px;
+	float:left;
+	position:relative;
+	margin-left:40px;
+}
+.bottom>ul>li:first-child{
+	margin-left:0px;
+}
+.bottom>ul>li div{
+	width:70px;
+	height:70px;
+	border:4px solid #FFF;
+	border-radius:35px;
+	line-height:70px;
+	text-align:center;
+}
+.bottom>ul{
+	width:1000px;
+	margin:20px auto;
+}
+.bottom>ul>li div span{
+	font-size:30px;
+}
+.bottom>ul>li>span{
+	width:100%;
+	text-align:center;
+	bottom:10px;
+	position:absolute;
+}
+.bottom-info{
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:210px;
+	background:#333;
+	line-height:40px;
+	text-align:center;
+}
+.bottom-info span{
+	color:#FFF;
+	font-size:20px;
+	
+}
+.bottom-info span:first-child{
+	float:left;
+}
+.bottom-info span:last-child{
+	float:right;
+}
+.li-selected>div{
+	width:80px!important;
+	height:80px!important;
+	border:4px solid #f1c50e!important;
+	border-radius:40px!important;
+	line-height:80px!important;
+}
+.li-selected div span{
+	font-size:30px;
+	color:#f1c50e;
+}

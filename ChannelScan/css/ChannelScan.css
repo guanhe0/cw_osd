@@ -1,0 +1,46 @@
+
+/*左边一级菜单部分*/
+.left-div{
+    position: absolute;
+    width: 250px;
+    height: 720px;
+}
+.left-div .left-ul{
+    list-style: none;
+    width: 230px;
+    height: inherit;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.left-div .left-ul > li{
+    list-style: none;
+    height: 70px;
+    width: 210px;
+    padding-left: 20px;
+    line-height: 70px;
+    margin-top: 20px;
+}
+.left-selected{
+    background-color: #0099FF;
+}
+
+/*右边大的div部分*/
+.right-div{
+    position: absolute;
+    left: 250px;
+    width: 1010px;
+    height: inherit;
+}
+/*自动搜台模块*/
+.auto-div{
+    width: inherit;
+    height: inherit;
+}
+.left-move{
+    -webkit-transition-duration: 0.5s;
+    -webkit-transform: translateX(-250px);
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transition-timing-function:cubic-bezier(0.5,1,0.9,1);
+}
+
+

@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TimeShift</title>
+<link rel="stylesheet" type="text/css" href="../common/bootstrap/css/bootstrap-glyphicon.min.css">
+<link href="../common/css/base.css" rel="stylesheet" type="text/css">
+<link href="../common/css/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="./css/common.css"  rel="stylesheet" type="text/css">
+<link href="./css/TimeShift.css"  rel="stylesheet" type="text/css">
+
+<script src="./src/image.js"></script>
+
+</head>
+<body >
+	<div class = "time_shift">
+		<div class = "shift_head">
+			<table class = "shift_table1">
+				<tr><td>Time Shift Size</td></tr>
+				<tr class = "shift_size">
+					<td class = "w120">256M</td>
+					<td class = "w40" ></td>
+					<td class = "w120">512M</td>
+					<td class = "w40"></td>
+					<td class = "w120">1024M</td>
+					<td class = "w40"></td>
+					<td class = "w120">2048M</td>
+					<td class = "w40"></td>
+					<td class = "w120">Manual</td>
+					<td class = "w40"></td>
+				</tr>
+			</table>
+			<table class = "shift_table2" id = "shift_table2">
+				<tr>
+					<td class = "wid_usb">usb1</td>
+					<td align = "left" id = "usb_td">
+						<div class = "use_percent_i" id = "size_progress_0" >
+							
+						</div>
+						<div class = "use_percent" >
+							<span>1324M useful 2048M total</span>
+						</div>
+						<div class = "disk_number">disk1</div>
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_1">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_2">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_3">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>
+					</td>
+				</tr>
+				<tr>
+					<td class = "wid_usb">usb2</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_4">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>					
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_5">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>					
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_6">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>					
+					</td>
+					<td align = "left">
+						<div class = "use_percent_i" id = "size_progress_7">
+						
+						</div>
+						<div class = "use_percent">1324M useful 2048M total</div>
+						<div class = "disk_number">disk1</div>					
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "disk_format">		
+			<table class = "disk_format_tb">
+				<tr><td align = "left"><span class = "ml">Format</span></td></tr>
+				<tr><td align = "left"><button  id = "shift_format" class = "bt ml">Format</button></td></tr>
+			</table>
+		</div>
+	</div>
+	<script src="../common/js/jquery.min.js"></script>
+	<script src="./common/js/jquery-ui.js"></script>
+	<script src="../Widgets/jquery/jquery.ui.widget.min.js"></script>
+	<script src="../Widgets/jquery/jquery.ui.progressbar.js"></script>
+	<script src="../common/js/common.js"></script>	
+	<script src="js/TimeShift.js"></script>
+</body>
+</html>

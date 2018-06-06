@@ -1,0 +1,49 @@
+/* CSS Document */
+body{
+	width:1280px;
+	height:720px;
+	overflow:hidden;
+	font-size: 20px;
+	background-color: transparent;
+	font-family: fangzhenglanting;
+	text-align:center;
+}
+.bottom{
+	width:1280px;
+	height:20%;
+	background:rgba(100,100,100,0.1);
+	position:absolute;bottom:0;
+	text-align:center;
+}
+
+.la{
+	float:left;
+	width:100px;
+	height:64px;
+	margin-top:60px;
+}
+.time_shift{
+	background:rgb(127,127,127);
+	width:1280px;
+	height:720px;
+	position:absolute;
+}
+.use_percent_i{
+	float:left;
+	#background:#ff00f0;
+	margin-top:-30px;
+	width:200px;
+	height:18px;
+}
+.ml{
+	margin-left:0;
+}
+.mr{
+	margin-right:0;
+}
+.fl{
+	float:left;
+}
+.shift_td_selected{
+	background:rgb(91,154,212);
+}

@@ -1,0 +1,60 @@
+.time_shift{
+	background:rgb(127,127,127);
+	width:1280px;
+	height:720px;
+	position:absolute;
+}
+.shift_head{
+	background:rgb(176,176,176);
+	width:98%;
+	height:70%;
+	margin:1% auto;
+}
+.disk_format{
+	background:rgb(176,176,176);
+	width:98%;
+	height:24%;
+	margin:1% auto;
+}
+.pvr_title{
+	#float:left;
+	text-align:left;
+	height:16%;
+	width:100%;
+	background:green;
+}
+.pvr_content{
+	#float:left;
+	#background:purple;
+	height:82%;
+}
+.size{
+	float:left;
+	width:18%;
+	height:100%;
+	background:yellow;
+	
+}
+.shift_size{
+	height:40%;
+	background:blue;
+}
+.usb_size{
+	height:58%;
+	background:red;
+}
+.vc{
+	height:160px;
+	line-height:160px;
+}
+.shift_size_selecte{
+	width:40px;
+	height:40px;
+	#margin-top:100px;
+	padding-top:20px;
+}
+.usb{
+	width:100%;
+	height:50%;
+	background:#ff00ff;
+}
